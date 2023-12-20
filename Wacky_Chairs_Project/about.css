@@ -1,0 +1,135 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: rgb(46, 96, 96);
+    background-image: linear-gradient(to bottom right, rgb(109, 109, 180), blue, rgb(17, 17, 125));
+}
+
+#header {
+/*     
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    border: 3px black solid;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+div#nav {
+    display: grid;
+    font-size: 40px;
+    grid-row-start: 1;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px red solid;
+    grid-column:span ;
+}
+@media only screen and (max-width: 1800px) { 
+    
+    div#nav .home {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    div#nav .products {
+        grid-column-start: 2;
+        color: white;
+        text-decoration: none;
+    }
+    a.dropdown-btn {
+        color: white;
+        text-decoration: none;
+    }
+    /* menu is the list */
+
+    div.menu {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        display: none;
+    }
+
+    .menu a {
+        text-decoration: none;
+    }
+    
+    div.dropdown:hover .menu {
+        display: block;
+    }
+    
+    div#nav .about {
+        text-decoration: none;
+        grid-column-start: 3;
+    }
+    .about a {
+        text-decoration: none;
+    }
+    
+    div#nav .email-list {
+        grid-column-start: 4;
+    }
+    #mission-state {
+        text-align: center;
+        transform: translateY(50px);
+        border-top: 3px black solid;
+        border-bottom: 3px black solid;
+    }
+
+    #meet-team {
+        /* transform: translateY(100px); */
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        /* text-align: center; */
+    }
+    #meet-team .header {
+        font-size: 40px;
+        grid-row-start: 2;
+        grid-gap: 30px;
+    }
+    #meet-team div{
+        transform: translateY(50px)
+    }
+    #meet-team img {
+        width: 220px;
+        height: 200px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 100%;
+    }
+    #meet-team .ceo {
+        grid-column-start: 1;
+    }
+    #meet-team .worker-1 {
+        grid-column-start: 2;
+    }
+    #meet-team .worker-2 {
+        grid-column-start: 3;
+    }
+    #meet-team .worker-3 {
+        grid-column-start: 4;
+    }
+    div#footer {
+        transform: translateY(60px);
+        border: 3px solid rgb(0, 0, 0);
+        text-align: center;
+        display: grid;
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    div#footer .copyright {
+        grid-column-start: 1;
+    }
+    #footer a {
+        color: white;
+    }
+    div#footer .email {
+        grid-column-start: 2;
+    }
+}

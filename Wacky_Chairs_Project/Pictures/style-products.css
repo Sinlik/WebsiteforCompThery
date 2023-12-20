@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=erotique&display=swap');
+
+* {
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(109, 109, 180), blue, rgb(17, 17, 125));
+}
+
+#header {
+    border: 3px black solid;
+    text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+a {
+    text-decoration: none;
+}
+div#nav {
+    display: grid;
+    font-size: 40px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px red solid;
+    grid-column:span;
+}
+@media only screen and (max-width: 1800px) {
+    
+    div#nav .home {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    div#nav .products {
+        grid-column-start: 2;
+        color: white;
+        text-decoration: none;
+    }
+    a.dropdown-btn {
+        color: white;
+        text-decoration: none;
+    }
+    /* menu is the list */
+
+    div.menu {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        display: none;
+    }
+
+    .menu a {
+        text-decoration: none;
+    }
+    
+    div.dropdown:hover .menu {
+        display: block;
+    }
+    
+    div#nav .about {
+        text-decoration: none;
+        grid-column-start: 3;
+    }
+    .about a {
+        text-decoration: none;
+    }
+    
+    div#nav .email-list {
+        grid-column-start: 4;
+    }
+}
+
+
+.homepage {
+    color: black;
+    text-decoration: none;
+}
+.products-box {
+    display: grid;
+    border: 1px solid red;
+}
+.products-box img {
+    width: 200px;
+    height: 200px;
+}
+.products-box div {
+    font-family:sans-serif;
+    padding: 10px;
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.products-box #num-1 {
+    font-family: sans-serif;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.products-box #num-1 #products .pr{
+    display: grid;
+    margin: 50px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: inline-block;
+    border: solid 10px brown;
+}
+.products-box #num-2 {
+    font-family:'Allura', sans-serif;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.products-box #num-2 #products .pr{
+    display: grid;
+    margin: 50px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: inline-block;
+    border: solid 2px orange;
+}
+.products-box #num-3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.products-box #num-3 #products .pr{
+    display: grid;
+    margin: 50px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: inline-block;
+    border: solid 2px orange;
+}
+.products-box #num-4 {
+    font-family:'Silkscreen', sans-serif;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+.products-box #num-4 #products .pr{
+    display: grid;
+    margin: 50px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: inline-block;
+    border: solid 2px orange;
+}
+.products-box #num-5 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.products-box #num-5 #products .pr{
+    display: grid;
+    margin: 50px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: inline-block;
+    border: solid 2px orange;
+}
+div#footer {
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    display: grid;
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+div#footer .copyright {
+    grid-column-start: 1;
+}
+#footer a {
+    color: white;
+}
+div#footer .email {
+    grid-column-start: 2;
+}
